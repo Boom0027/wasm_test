@@ -4,6 +4,9 @@
   const result = await WebAssembly.instantiateStreaming(fetch("lib.wasm"), go.importObject)
   go.run(result.instance);
 
+  document.getElementById("loader").classList.add('hide');
+  document.getElementById("main").classList.remove('hide');
+
   // Step 1: Default hashed value
   let hashedValue = "";
 
