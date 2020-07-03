@@ -48,6 +48,10 @@ body {
   display: none;
 }
 
+p {
+  word-break:break-all
+}
+
 #loader {
   margin: 40vh auto;
   border: 16px solid #f3f3f3; /* Light grey */
